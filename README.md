@@ -48,6 +48,9 @@ While TypeScript has many benefits, there are a few drawbacks:
    npm I -g typescript
    ```
 3. **Compile TypeScript Code**: Compile `.ts` files to JavaScript. This will generate a `.js` file that can be run (e.g., with Code Runner). By default, TypeScript compiles to ES5.
+   ```bash
+   tsc filename.ts
+   ```
 
 ### TypeScript Compiler Configuration
 To customize TypeScript settings:
@@ -78,17 +81,44 @@ To use debugging tools, create a `launch.json` file in your `.vscode` folder and
 ## Type Handling in TypeScript
 
 1. **Declaring Variables with Types**: TypeScript allows specifying types for variables, making the code more predictable.
-   
-3. **Arrays**: TypeScript enforces consistent types in arrays, preventing unexpected types from being added.
-4. **Tuples**: Tuples allow fixed structures with specific types for each element, adding structure to arrays of known values.
-5. **Enums**: Enums define a set of named constants, making the code more readable and reducing the risk of misused values.
+   ```bash
+   let sales: number = 123_456_789
+   let des: string = “Azman Ahmed”
+   let anyvar ///here variable anyvar is of any type
+   ```
 
+2. **Arrays**: TypeScript enforces consistent types in arrays, preventing unexpected types from being added.
+   ```bash
+   let arr[] = [1,2,”3”]
+   let arr[]:number[] = [1,2,3]
+   ```
+
+3. **Tuples**: Tuples allow fixed structures with specific types for each element, adding structure to arrays of known values.
+   ```bash
+   let user: [string, number] = [‘Azman’, 1];
+   ```
+4. **Enums**: Enums define a set of named constants, making the code more readable and reducing the risk of misused values.
+   ```bash
+   const enum SizeShirt  {small = 1, medium, large}
+   let mysize:SizeShirt = SizeShirt.large
+   console.log(mysize)
+   ```
 ---
 
 ## Functions
 In TypeScript, you can define the types of function parameters and return types, adding clarity and reducing errors.
+```bash
+function calculateTax(income : number): number{
+	return income*1.2;
+}
+```
 
 ## Objects
 Define object structures with type annotations to enforce shape and type consistency, making it easier to work with structured data.
-
+```bash
+let employee: { name: string; age: number } = {
+    name: "Azman",
+    age: 30,
+};
+```
 ---
