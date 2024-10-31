@@ -19,15 +19,14 @@ TypeScript provides several advantages over JavaScript that make it especially a
 1. **Static Typing**
    - **Statically Typed**: TypeScript enforces types at compile time, allowing early detection of potential errors.
      ```bash
-     	int number = 20;
-	Number = ‘a’  x
+	    int number = 20;
+		Number = ‘a’;  (Not allowed)
      ```
    - **Dynamically Typed (JavaScript)**: In JavaScript, type-related errors are often caught only at runtime, which can lead to unexpected behavior.
      ```bash
-	Let number = 10;
-	Number = “a”;
-	Math.round(number);
-
+		Let number = 10;
+		Number = “a”;
+		Math.round(number);
      ```
 2. **Code Completion and IntelliSense**: TypeScript's type system enables code editors to provide accurate suggestions, auto-completion, and error detection, making coding faster and less error-prone.
 3. **Refactoring**: Types improve refactoring tools, allowing you to confidently change code structure without breaking functionality.
@@ -45,6 +44,9 @@ While TypeScript has many benefits, there are a few drawbacks:
 ## Setting up the TypeScript Environment
 1. **Install Node.js** (TypeScript requires Node.js to run in development).
 2. **Install TypeScript** globally using npm.
+   ```bash
+   npm I -g typescript
+   ```
 3. **Compile TypeScript Code**: Compile `.ts` files to JavaScript. This will generate a `.js` file that can be run (e.g., with Code Runner). By default, TypeScript compiles to ES5.
 
 ### TypeScript Compiler Configuration
@@ -76,9 +78,10 @@ To use debugging tools, create a `launch.json` file in your `.vscode` folder and
 ## Type Handling in TypeScript
 
 1. **Declaring Variables with Types**: TypeScript allows specifying types for variables, making the code more predictable.
-2. **Arrays**: TypeScript enforces consistent types in arrays, preventing unexpected types from being added.
-3. **Tuples**: Tuples allow fixed structures with specific types for each element, adding structure to arrays of known values.
-4. **Enums**: Enums define a set of named constants, making the code more readable and reducing the risk of misused values.
+   
+3. **Arrays**: TypeScript enforces consistent types in arrays, preventing unexpected types from being added.
+4. **Tuples**: Tuples allow fixed structures with specific types for each element, adding structure to arrays of known values.
+5. **Enums**: Enums define a set of named constants, making the code more readable and reducing the risk of misused values.
 
 ---
 
