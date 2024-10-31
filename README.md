@@ -19,10 +19,16 @@ TypeScript provides several advantages over JavaScript that make it especially a
 1. **Static Typing**
    - **Statically Typed**: TypeScript enforces types at compile time, allowing early detection of potential errors.
      ```bash
-         int number = 20;
-		   Number = ‘a’  x
+     	int number = 20;
+	Number = ‘a’  x
      ```
    - **Dynamically Typed (JavaScript)**: In JavaScript, type-related errors are often caught only at runtime, which can lead to unexpected behavior.
+     ```bash
+	Let number = 10;
+	Number = “a”;
+	Math.round(number);
+
+     ```
 2. **Code Completion and IntelliSense**: TypeScript's type system enables code editors to provide accurate suggestions, auto-completion, and error detection, making coding faster and less error-prone.
 3. **Refactoring**: Types improve refactoring tools, allowing you to confidently change code structure without breaking functionality.
 4. **Shorthand Notations**: TypeScript syntax often includes shorthands that make the code cleaner and easier to understand.
