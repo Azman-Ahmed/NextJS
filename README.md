@@ -55,7 +55,10 @@ While TypeScript has many benefits, there are a few drawbacks:
 ### TypeScript Compiler Configuration
 To customize TypeScript settings:
 1. **Initialize TypeScript Configuration** to create a `tsconfig.json` file.
-2. **Update `tsconfig.json`**: Modify configurations like `target` (JavaScript version), `strict` (strict mode), and other compiler options.
+   ```bash
+   tsc –init (it creates a config file)
+   ```
+3. **Update `tsconfig.json`**: Modify configurations like `target` (JavaScript version), `strict` (strict mode), and other compiler options.
 
 ---
 
