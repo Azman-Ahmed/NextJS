@@ -84,7 +84,10 @@ To use debugging tools, create a `launch.json` file in your `.vscode` folder and
    ```bash
    let sales: number = 123_456_789
    let des: string = “Azman Ahmed”
-   let anyvar ///here variable anyvar is of any type
+   let flag:boolean = true
+   let anyvar: any = 1
+   anyvar = "str"
+   ///here variable anyvar is of any type
    ```
 
 2. **Arrays**: TypeScript enforces consistent types in arrays, preventing unexpected types from being added.
