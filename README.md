@@ -1,5 +1,3 @@
-# NextJS
-
 # TypeScript Study Notes
 
 ## Prerequisites
@@ -59,11 +57,24 @@ To customize TypeScript settings:
    tsc –init (it creates a config file)
    ```
 3. **Update `tsconfig.json`**: Modify configurations like `target` (JavaScript version), `strict` (strict mode), and other compiler options.
+   <p align="center">
+	<img src="TypeScriptImage/Picture1.png" alt="modification of config file" width="700"/>
+   </p>
+   <p align="center">
+	<img src="TypeScriptImage/Picture2.png" alt="modification of config file" width="700"/>
+   </p>
+   <p align="center">
+	<img src="TypeScriptImage/Picture3.png" alt="modification of config file" width="700"/>
+   </p>
 
 ---
 
 ## Debugging Setup (Optional)
 To use debugging tools, create a `launch.json` file in your `.vscode` folder and configure it for TypeScript debugging.
+
+<p align="center">
+	<img src="TypeScriptImage/Picture4.png" alt="modification of config file" width="700"/>
+</p>
 
 ---
 
