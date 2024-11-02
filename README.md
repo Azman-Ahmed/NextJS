@@ -130,6 +130,21 @@ function calculateTax(income : number): number{
 }
 ```
 
+Arguments type and return type
+
+```bash
+function multiply(value1: number, value2: number): number {
+    return value1 * value2;
+}
+  
+console.log(multiply(10, 5)); // Prints: 50
+  
+const myMultiply: (val1: number, val2: number) => number = multiply;
+console.log(myMultiply(5, 2)); // Prints: 10
+  
+```
+
+
 ## Objects
 Define object structures with type annotations to enforce shape and type consistency, making it easier to work with structured data.
 ```bash
@@ -138,4 +153,18 @@ let employee: { name: string; age: number } = {
     age: 30,
 };
 ```
+### A complex object
+```bash
+let complex: { data: number[], amount: number , output: (all: boolean) => number[] } = 
+{
+    data: [100, 3,99, 10],
+    amount: 12,
+    output: function(all: boolean): number[] 
+    {
+      return this.data
+    }
+};
+console.log(complex.amount);
+```
+
 ---
