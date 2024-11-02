@@ -197,7 +197,22 @@ let complex2: Complex  = {
       return this.data
    }
 };
+```
 
+## Array Destructuring
 
+```bash
+const testResults: number[] = [3.89, 2.99, 1.38];
+const [result1, result2, result3] = testResults;
+```
 
+## Object Destructuring
+
+```bash
+const scientist: { firstName: string, experience: number } = {
+   firstName: 'Robert',
+   experience: 9000 };
+const { firstName, experience } = scientist;
 ---
+
+
