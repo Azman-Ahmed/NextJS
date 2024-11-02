@@ -166,5 +166,23 @@ let complex: { data: number[], amount: number , output: (all: boolean) => number
 };
 console.log(complex.amount);
 ```
+### Optional Object Properties
+```bash
+const right: { name: string, age?: number } = {
+    name: 'Robert'
+};
+
+const alsoRight: { name: string, age?: number } = {
+    name: 'Robert',
+    age: 24
+};
+
+// This is not possible because the name key-value pair is missing.
+const wrong: { name: string, age?: number } = {
+    age: 24
+};
+
+```
+
 
 ---
