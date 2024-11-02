@@ -184,5 +184,20 @@ const wrong: { name: string, age?: number } = {
 
 ```
 
+## Alias
+
+To Create our own type we can use Alias
+
+```bash
+type Complex = { data: number[], output: (all: boolean) => number[] };
+
+let complex2: Complex  = {
+   data: [100, 3, 99, 10],
+   output: function(all: boolean): number[] {
+      return this.data
+   }
+};
+
+
 
 ---
